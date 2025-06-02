@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #0070d2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK000004KER8" method="POST">
+    <input type="hidden" name="orgid" value="00DgK000004KER8">
+    <input type="hidden" name="retURL" value="http://gmail.com">
+
+    <label for="00NgK000012dRt7">Booking Id:</label>
+    <input id="00NgK000012dRt7" maxlength="20" name="00NgK000012dRt7" type="text" />
+
+    <label for="00NgK000012dRuj">Feedback:</label>
+    <textarea id="00NgK000012dRuj" name="00NgK000012dRuj" rows="3"></textarea>
+
+    <input type="submit" name="submit" value="Submit Feedback">
+  </form>
+</body>
+</html>
